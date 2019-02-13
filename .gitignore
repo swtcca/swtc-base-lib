@@ -66,4 +66,5 @@ typings/
 .DS_Store
 *.pyc
 **/node_modules
+**/dist
 **/package-lock.json

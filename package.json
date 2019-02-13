@@ -1,71 +1,56 @@
 {
-  "_from": "jingtum-base-lib",
-  "_id": "jingtum-base-lib@1.0.9",
-  "_inBundle": false,
-  "_integrity": "sha1-XhzNPws+bO8MuyUV0OL5IQNBYrk=",
-  "_location": "/jingtum-base-lib",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "jingtum-base-lib",
-    "name": "jingtum-base-lib",
-    "escapedName": "jingtum-base-lib",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/jingtum-base-lib/-/jingtum-base-lib-1.0.9.tgz",
-  "_shasum": "5e1ccd3f0b3e6cef0cbb2515d0e2f921034162b9",
-  "_spec": "jingtum-base-lib",
-  "_where": "/Users/xcliu/junk/swtc-base-lib",
-  "author": {
-    "name": "landoyjx,wudan_npm"
-  },
-  "bundleDependencies": false,
-  "dependencies": {
-    "assert": "^1.4.1",
-    "base-x": "^1.0.4",
-    "bn.js": "^4.11.6",
-    "brorand": "^1.0.6",
-    "elliptic": "^6.3.2",
-    "extend": "^3.0.0",
-    "hash.js": "^1.0.3",
-    "utf8": "^2.1.2"
-  },
-  "deprecated": false,
-  "description": "jingtum base lib for wallet and so on.",
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "gulp": "^3.9.1",
-    "gulp-bump": "^2.5.0",
-    "gulp-concat": "^2.6.0",
-    "gulp-jshint": "^2.0.2",
-    "gulp-rename": "^1.2.2",
-    "gulp-uglify": "^2.0.0",
-    "jshint": "^2.9.4",
-    "map-stream": "0.0.6",
-    "mocha": "^3.1.2",
-    "webpack": "^1.13.3"
-  },
-  "keywords": [
-    "jingtum",
-    "wallet",
-    "account"
-  ],
-  "license": "Apache-2.0",
-  "main": "index.js",
-  "name": "jingtum-base-lib",
-  "repository": {
-    "type": "git",
-    "url": "http://git.jingtum.com/root/jingtum-base-lib.git"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "version": "1.0.9"
+	"name": "swtc-base-lib",
+	"version": "1.0.9",
+	"description": "swtc base library for jingtum blockchain",
+	"main": "src/index.js",
+	"browser": "src/index.web.js",
+	"directories": {
+		"test": "test"
+	},
+	"scripts": {
+		"gulp": "gulp dev",
+		"gulp:production": "gulp production",
+		"build": "webpack",
+		"build:production": "webpack --config prod.webpack.config",
+		"dev": "webpack-dev-server",
+		"test": "mocha \"test/test*.js\"",
+		"test:extended": "mocha \"test/*.js\""
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/swtcca/swtc-base-lib.git"
+	},
+	"keywords": [
+		"swtc",
+		"jingtum",
+		"wallet",
+		"account",
+		"keypair"
+	],
+	"author": "Lospring Liu <lospringliu@gmail.com>",
+	"license": "BSD-2-Clause",
+	"bugs": {
+		"url": "https://github.com/swtcca/swtc-base-lib/issues"
+	},
+	"homepage": "https://github.com/swtcca/swtc-base-lib#readme",
+	"dependencies": {
+		"assert": "^1.4.1",
+		"base-x": "1.1.0",
+		"bn.js": "^4.11.8",
+		"bops": "^1.0.0",
+		"brorand": "^1.1.0",
+		"elliptic": "^6.4.1",
+		"extend": "^3.0.2",
+		"hash.js": "^1.1.7",
+		"utf8": "^3.0.0"
+	},
+	"devDependencies": {
+		"chai": "^4.2.0",
+		"gulp": "^4.0.0",
+		"mocha": "^5.2.0",
+		"webpack": "^4.29.3",
+		"webpack-cli": "^3.2.3",
+		"webpack-dev-server": "^3.1.14",
+		"webpack-stream": "^5.2.1"
+	}
 }
