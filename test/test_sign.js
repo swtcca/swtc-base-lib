@@ -16,12 +16,12 @@ var sdata = "F95EFF5A4127E68D2D86F9847D9B6DE5C679EE7D9F3241EC8EC67F99C4CDA923";
 // 3) object with two hex-string properties (r and s)
 // Verify the signature 
 describe('Wallet', function() {
-	describe('signing', function() {
-		it('sign should generate text', function() {
+	describe('signing Tx', function() {
+		it('signTx should generate text', function() {
 			var sign =wt.signTx(sdata);
 			expect(sign).to.not.be.null;
 		});
-		it('verify sign should be true', function() {
+		it('verifyTx sign should be true', function() {
 			var sign =wt.signTx(sdata);
 			expect(wt.verifyTx(sdata, sign)).to.be.true;
 		});
