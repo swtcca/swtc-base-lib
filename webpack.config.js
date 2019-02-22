@@ -8,7 +8,7 @@ module.exports = {
 		contentBase: path.resolve(__dirname, 'dist'),
 		compress: true,
 	},
-	entry: "./src/index.web.js",
+	entry: "./src/index.js",
 	output: {
 		library: "swtc_base",
 		path: path.resolve(__dirname, "dist"),
