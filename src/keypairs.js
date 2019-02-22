@@ -53,3 +53,6 @@ exports.convertAddressToBytes = swtc_keypairs.addressCodec.decode;
 */
 //Wallet.prototype.convertBytesToAddress= function(bytes) {
 exports.convertBytesToAddress = swtc_keypairs.addressCodec.encode;
+
+// export ec tempararily for wallet
+exports.ec = swtc_keypairs.ec;

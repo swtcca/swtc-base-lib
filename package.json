@@ -1,6 +1,6 @@
 {
 	"name": "swtc-base-lib",
-	"version": "2.0.1",
+	"version": "2.0.2",
 	"description": "swtc base@next library for jingtum blockchain",
 	"main": "src/index.js",
 	"directories": {

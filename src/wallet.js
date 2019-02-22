@@ -1,8 +1,7 @@
 'use strict';
 
 var keypairs = require('./keypairs');
-var elliptic = require('elliptic');
-var ec = elliptic.ec('secp256k1');
+var ec = keypairs.ec;
 var hexToBytes = require('./utils').hexToBytes;
 var bytesToHex = require('./utils').bytesToHex;
 var hashjs = require('hash.js');
@@ -51,9 +50,7 @@ Wallet.fromSecret = function(secret) {
  * @param address
  * @returns {boolean}
  */
-Wallet.isValidAddress = function(address) {
-	return keypairs.checkAddress(address);
-};
+Wallet.isValidAddress = keypairs.checkAddress;
 
 /**
  * static function
