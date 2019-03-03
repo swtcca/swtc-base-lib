@@ -1,3 +1,4 @@
-#The SWTC Base JavaScript Library
+# The SWTC Base JavaScript Library
 
-jcc-base-lib == swtc-base-lib == swtc-wallet
+## jingtum-base-lib == swtc-base-lib == swtc-wallet
+## jcc_jingtum_base_lib == swtc-base-lib@jcc == swtc-factory
