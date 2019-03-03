@@ -1,5 +1,5 @@
 var assert = require('assert');
-var Wallet = require('../src/wallet');
+var Wallet = require('../index.js').Wallet;
 var expect = require('chai').expect;
 
 var wt = new Wallet('saai2npGJD7GKh9xLxARfZXkkc8Bf');
