@@ -18,11 +18,7 @@ exports.deriveKeyPair = swtc_keypairs.deriveKeypair;
 /**
  * devive keypair from privatekey
  */
-exports.deriveKeyPairWithKey = function(key) {
-	var privateKey = key;
-	var publicKey = bytesToHex(swtc_keypairs.ec.keyFromPrivate(key).getPublic().encodeCompressed());
-	return { privateKey: privateKey, publicKey: publicKey };
-};
+exports.deriveKeyPairWithKey = swtc_keypairs.deriveKeyPairWithKey
 
 
 /**
